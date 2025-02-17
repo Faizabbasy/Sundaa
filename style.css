@@ -1,0 +1,506 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E1E1E;
+    font-family: Arial, sans-serif;
+    font-size: larger;
+}
+
+/* Navigation */
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.navvv {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--bg-primary);
+    width: 50%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 10px 30em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav li {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 246, 246);
+    font-size: larger;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+    color: rgb(0, 0, 0);
+}
+
+nav li:hover {
+    transform: translateY(-5px);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* Hover effect to display the dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+:root {
+    --bg-primary: blue;
+    --bg-secondary: white;
+    --txt-primary: rgb(212, 212, 212);
+    --txt-secondary: black;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: grey;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10px 4rem ;
+    width: 90%;
+    position: relative;
+}
+
+#home {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.home-isi-btn {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.home-isi {
+    width: 80%;
+    height: 45%;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3%;
+    justify-content: right;
+    margin: 40px;
+    margin-top: 8%;
+    margin-left: 12%;
+    color: white;
+}
+
+.pp{
+    font-size: 10px;
+    color: white ;
+}
+
+.word {
+    color: white;
+}
+
+.btn {
+    display: flex;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    width: 25%;
+    border-radius: 2rem;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.btn-ig {
+    display: flex;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    width: 25%;
+    border-radius: 2rem;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: -6.5%;
+}
+
+.fa-brands {
+    padding: 3px;
+    size: 5cap;
+}
+
+.faiz {
+    color: #61bc84;
+    font-size: larger;
+}
+
+.foto {
+    display: flex;
+    width: 30%;
+    height: 80vh;
+    border-radius: 150px 250px;
+    box-shadow: 2px 2px 20px black;
+    margin-top: 8%;
+}
+
+#about {
+    display: flex;
+    gap: 30px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px #c6ffe6;
+    padding: 40px;
+    margin: 0 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+    margin-left: 50%;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+.kemampuan {
+    margin: 20px;
+}
+
+.kemampuan-isi {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    height: 100vh;
+}
+
+.html {
+    border-radius: 3rem;
+}
+
+.css {
+    border-radius: 3rem;
+}
+
+.html, .css {
+    background: linear-gradient(#acc2ef, white);
+    text-align: center; 
+    box-shadow: 2px 2px 20px black;
+    padding: 20px;
+    margin-top: -280px;
+}
+
+.foto1, .foto2 {
+    width: 80px; 
+    height: auto; 
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.foto1:hover, .foto2:hover {
+    transform: scale(1.1) translateY(-10px); 
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.2); 
+}
+
+
+.serti {
+    display: flex; 
+    overflow-x: auto; 
+    width: 80%; 
+    gap: 30px;
+    padding: 10px 0; 
+    margin-top: -27%;
+    margin-left: 8%;
+}
+
+
+.serti img {
+    width: 270px; 
+    height: auto; 
+    flex-shrink: 0; 
+
+}
+
+
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+#contact div {
+    display: flex;
+    width: 20%;
+    padding: 10px;
+    border-radius: 40px;
+    justify-content: center;
+
+}
+
+.img-ig { 
+    border-radius: 10px 3em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-ig:hover {
+    transform: scale(1.1), translateY(-10px); 
+    box-shadow: 2px 4px 25px rgba(255, 255, 255, 0.2); 
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+
+    /* Section container */
+    #home {
+        display: flex;
+        flex-direction: column; /* Ensure content is stacked vertically */
+        align-items: center; /* Center the content horizontally */
+        justify-content: flex-start; /* Align items to the top */
+        text-align: center; /* Center text */
+        padding: 10px; /* Reduced padding for tighter layout */
+    }
+
+    /* Photo styling */
+    .foto {
+        width: 30%;
+        height: 30vw; /* Set height relative to viewport width */
+        border-radius: 50%; /* Circle shape */
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5); /* Softer shadow */
+        margin-top: 5%; /* Reduced top margin to reduce space */
+    }
+
+    /* Home content styling */
+    .home-isi {
+        width: 90%; /* Make sure it's responsive and doesn't overflow */
+        font-size: 14px; /* Readable font size */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 3%; /* Reduced padding to make the content more compact */
+        color: white;
+        margin-top: 5%; /* Reduced space between photo and content */
+    }
+
+    /* Text paragraph styling */
+    .pp {
+        font-size: 12px; /* Slightly larger for readability */
+        margin-top: 8px; /* Reduced spacing between text */
+    }
+
+    /* Button container */
+    .home-isi-btn {
+        width: 90%; /* Ensure it fits properly */
+        margin-top: 8%; /* Reduced margin to bring the buttons closer to the content */
+    }
+
+    /* Button styling */
+    .btn, .btn-ig {
+        color: rgb(255, 255, 255);
+        border: 2px solid;
+        width: 80%; /* Adjust width for better scaling */
+        font-size: 14px; /* Improved font size for readability */
+        border-radius: 2rem;
+        padding: 8px; /* Slightly reduced padding for tighter buttons */
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 6px; /* Reduced space between buttons */
+    }
+
+    /* Instagram button adjustments */
+    .btn-ig {
+        margin-top: 5px; /* Reduced space above Instagram button */
+    }
+}
+
+
+
+
+@media screen and (max-width: 693px) {
+    .btn {
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    width: 38%;
+    font-size: 15px;
+    border-radius: 2rem;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top: 28%;
+    }
+
+    .btn-ig {
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    width: 25%;
+    font-size: 15px;
+    border-radius: 2rem;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 49%;
+    margin-top: -10%;
+    }
+
+}
+
+.tugas {
+    display: flex;
+    gap: 10%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapel {
+    background-color: #2d2d2d;
+    font-size: large;
+    color: white;
+    width: 20%;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mapel:hover {
+    transform: scale(1.5), translateY(-15px); 
+    box-shadow: 2px 4px 25px rgba(255, 255, 255, 0.2); 
+}
+
